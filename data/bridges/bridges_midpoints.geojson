@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "bridges_midpoints",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "bridge": "george-washington", "radius_m": 3493.4 }, "geometry": { "type": "Point", "coordinates": [ -73.953178063341738, 40.851886960700334 ] } },
+{ "type": "Feature", "properties": { "bridge": "kosciuszko", "radius_m": 2199.2 }, "geometry": { "type": "Point", "coordinates": [ -73.929843100689638, 40.727312749459671 ] } },
+{ "type": "Feature", "properties": { "bridge": "pulaski", "radius_m": 1375.5 }, "geometry": { "type": "Point", "coordinates": [ -73.952717136211419, 40.739227452148128 ] } },
+{ "type": "Feature", "properties": { "bridge": "queensboro", "radius_m": 3530.1 }, "geometry": { "type": "Point", "coordinates": [ -73.951832797507407, 40.755851863336588 ] } },
+{ "type": "Feature", "properties": { "bridge": "williamsburg", "radius_m": 3635.2 }, "geometry": { "type": "Point", "coordinates": [ -73.973304518406181, 40.713976574522476 ] } }
+]
+}
