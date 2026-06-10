@@ -5,21 +5,21 @@ nycbridges.austinsteinhart.com
 https://www.reddit.com/r/NYCbike/comments/1hkr39p/has_anyone_biked_all_the_bridges_im_putting/
 https://docs.google.com/spreadsheets/d/1HTUl9uznqwxvUvP7DIEEC6tHT5x-BvRp-08shjLpDS8/edit?gid=2028166149#gid=2028166149
 
-core
-* Brooklyn Bridge
-* Manhattan Bridge
-* Williamsburg Bridge
-* Queensboro Bridge
-* Pulaski Bridge
-* Kosciuszko Bridge
+| Name | Borough | Done |
+| --- | --- | --- |
+| Brooklyn Bridge | Brooklyn / Manhattan |  |
+| Manhattan Bridge | Manhattan / Brooklyn |  |
+| Williamsburg Bridge | Brooklyn / Manhattan | ✅ |
+| Queensboro Bridge | Manhattan / Queens | ✅ |
+| Pulaski Bridge | Brooklyn / Queens | ✅ |
+| Kosciuszko Bridge | Brooklyn / Queens | ✅ |
+| Washington Bridge | Manhattan / Bronx |  |
+| The High Bridge | Manhattan / Bronx |  |
+| Henry Hudson Bridge | Manhattan / Bronx |  |
+| GW | Manhattan / New Jersey | ✅ |
+| Verrazano | Brooklyn / Staten Island |  |
 
-* Washington Bridge
-* The High Bridge
-* Henry Hudson Bridge
-
-extra
-* GW
-* Verre
+Done is checked when a matching file exists in `data/processed_activities/`.
 
 ### web app /app
 * svelte kit app

@@ -25,5 +25,8 @@
 		"prettier-plugin-svelte": "^3.5.1",
 		"svelte": "^5.55.2",
 		"vite": "^8.0.7"
+	},
+	"dependencies": {
+		"maplibre": "^0.0.1-security"
 	}
 }
