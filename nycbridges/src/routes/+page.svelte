@@ -1,5 +1,7 @@
 <script>
+	import TableChartCombo from '$lib/components/TableChartCombo.svelte';
 	import Map from '$lib/components/Map.svelte';
+	import Chart from '$lib/components/Chart.svelte';
 	import titleSvg from '$lib/assets/title.svg';
 	import bikeSvg from '$lib/assets/bike.svg';
 
@@ -30,8 +32,52 @@
 			I biked over every single one of them. I wanted to see if there were any patterns in the data,
 			and if so, what they might reveal about the city.
 		</p>
+		<div class="scrolly">
+			<div class="background">
+				<div class="chart-sticky">
+					<Chart />
+				</div>
+			</div>
+			<div class="foreground">
+				<div class="steps">
+					<div class="step">Step 1</div>
+					<div class="step">Step 2</div>
+					<div class="step">Step 3</div>
+				</div>
+			</div>
+			<p>
+				There are a lot of bridges in New York City. The most recent bridge inventory by the NYC
+				Department of Transportation put the number somewhere around XXX.
+			</p>
+			<p>
+				I biked over every single one of them. I wanted to see if there were any patterns in the
+				data, and if so, what they might reveal about the city.
+			</p>
+		</div>
 		<div class="map-section">
 			<Map />
+		</div>
+		<p>
+			There are a lot of bridges in New York City. The most recent bridge inventory by the NYC
+			Department of Transportation put the number somewhere around XXX.
+		</p>
+		<p>
+			I biked over every single one of them. I wanted to see if there were any patterns in the data,
+			and if so, what they might reveal about the city.
+		</p>
+		<div class="chart-section">
+			<Chart />
+		</div>
+		<p>
+			There are a lot of bridges in New York City. The most recent bridge inventory by the NYC
+			Department of Transportation put the number somewhere around XXX.
+		</p>
+		<p>
+			I biked over every single one of them. I wanted to see if there were any patterns in the data,
+			and if so, what they might reveal about the city.
+		</p>
+		<div class="combo-section">
+			<TableChartCombo />
 		</div>
 		<p>
 			There are a lot of bridges in New York City. The most recent bridge inventory by the NYC
@@ -51,6 +97,48 @@
 		max-width: 800px;
 		margin: 0 auto;
 		text-align: center;
+	}
+
+	.background {
+		position: sticky;
+		height: 100dvh;
+		top: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.foreground {
+		position: relative;
+	}
+
+	.steps {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.step {
+		font-size: 1.5rem;
+		padding: 1rem;
+		border: 1px solid #999;
+		margin-bottom: 50vh;
+		border-radius: 8px;
+		background: #f0f0f0;
+	}
+
+	.chart-sticky {
+		width: 100%;
+	}
+
+	.map-section {
+		margin: 0 auto;
+		height: 80dvh;
+		width: 50%;
+	}
+	.chart-section {
+		margin: 0 auto;
+		width: 100%;
 	}
 
 	.title-svg {
@@ -88,6 +176,7 @@
 	}
 
 	.body {
+		margin: 0 auto;
 		margin-top: 1.9rem;
 	}
 
@@ -97,13 +186,10 @@
 		padding-bottom: 1.5rem;
 	}
 
-	.map-section {
-		width: min(100%, 980px);
-		height: 540px;
-		margin: 0 auto;
-		background: rgba(255, 255, 255, 0.34);
-		overflow: hidden;
-		box-shadow: 0 24px 60px rgba(6, 6, 6, 0.08);
+	.combo-section {
+		/* break out of the narrow article column so the 1/3 + 2/3 split has room */
+		width: min(96vw, 1200px);
+		margin: 3rem calc(50% - min(48vw, 600px)) 0;
 	}
 
 	@media (max-width: 760px) {
